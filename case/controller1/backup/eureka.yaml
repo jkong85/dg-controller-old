@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: controller-zuul
+  name: controller-eureka
 spec:
   selector:
     matchLabels:
@@ -13,12 +13,9 @@ spec:
         app: controller 
     spec:
       containers:
-      - name: controller-zull
-        image: jkong85/dg-controller-zuul:0.1
-        env:
-        - name: EUREKA_SERVER_IP
-          value: 10.1.0.78
+      - name: controller-eureka
+        image: jkong85/dg-controller-eureka:0.1
         ports:
-        - containerPort: 8889
+        - containerPort: 8888 
       nodeSelector:
         kubernetes.io/hostname: docker-for-desktop

@@ -34,6 +34,8 @@ ribbon:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://10.1.0.32:8888/eureka/
+      defaultZone: http://${EUREKA_SERVER_IP:localhost}:8888/eureka/
   instance:
     prefer-ip-address: true
+
+

@@ -15,6 +15,9 @@ spec:
       containers:
       - name: controller-test
         image: jkong85/dg-controller-test:0.1
+        env:
+        - name: EUREKA_SERVER_IP
+          value: 10.1.0.78
         ports:
         - containerPort: 9005
       nodeSelector:
