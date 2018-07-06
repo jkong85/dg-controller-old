@@ -1,0 +1,7 @@
+kubectl create -f eureka.yaml
+sleep 5 
+kubectl create -f test.yaml
+sleep 5 
+kubectl create -f zuul.yaml
+sleep 5 
+kubectl create -f service.yaml

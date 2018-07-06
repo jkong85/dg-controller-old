@@ -22,7 +22,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <!--<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>-->
+        <spring-cloud.version>Dalston.RELEASE</spring-cloud.version>
 
         <docker.daemon.hostname/> <!-- inject into maven build via -Ddocker.daemon.hostname=the.hostname -->
         <docker.daemon.port>2375</docker.daemon.port>
