@@ -1,6 +1,5 @@
 #!/bin/bash
 set -x
-
 function checkIP()
 {
     IPADDR=$1

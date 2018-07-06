@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ebe3c5-3cb4-4617-87f1-bcd019641a6f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/controller1/run" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/controller1/stop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/controller1/test.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/case/controller1/test.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/controller1/zuul.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/case/controller1/zuul.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller-test/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/controller-test/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller-zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/controller-zuul/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="49ebe3c5-3cb4-4617-87f1-bcd019641a6f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/controller-eureka/target/" />
@@ -42,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller-zuul/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
@@ -51,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller-eureka/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -417,12 +409,12 @@
       <updated>1530830378537</updated>
       <workItem from="1530830382322" duration="2000000" />
       <workItem from="1530849862596" duration="4478000" />
-      <workItem from="1530855998010" duration="4712000" />
+      <workItem from="1530855998010" duration="4954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11190000" />
+    <option name="totallyTimeSpent" value="11432000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1137" extended-state="6" />
@@ -449,7 +441,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.215625" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2234375" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -662,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller-zuul/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller-test/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -680,6 +665,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller-zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
         </state>
       </provider>
     </entry>

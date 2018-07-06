@@ -1,4 +1,5 @@
 #!/bin/sh
+rm eureka_server_ip
 
 kubectl delete -f eureka.yaml
 sleep 5 
