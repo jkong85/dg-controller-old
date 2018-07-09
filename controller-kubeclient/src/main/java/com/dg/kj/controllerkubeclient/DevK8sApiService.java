@@ -12,7 +12,7 @@ public class DevK8sApiService {
     //k8s api封装库调用
     private static KubernetesClient kubernetesClient;
     private static Config config;
-    private static String masterIP = "http://192.168.65.3:443";
+    private static String masterIP = "http://localhost:8080";
 
     //初始化 - 连接k8s api server
     public static void init(){
