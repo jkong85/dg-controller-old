@@ -1,15 +1,18 @@
 package com.dg.kj.controllerkubeclient;
 
 import com.alibaba.fastjson.JSON;
+import io.kubernetes.client.ApiClient;
 import io.kubernetes.client.ApiException;
 import java.io.IOException;
 import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 
+import io.kubernetes.client.Configuration;
 import io.kubernetes.client.apis.CoreV1Api;
 import io.kubernetes.client.models.V1Pod;
 import io.kubernetes.client.models.V1PodList;
+import io.kubernetes.client.util.Config;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -32,7 +35,7 @@ public class ControllerKubeclientApplication {
         client.getK8sApiServer();
     }
 
-    public String getK8sApiServer() throws ApiException{
+    public String getK8sApiServer() throws IOException, ApiException{
         Map<String,String> map=new HashMap<String,String>();
         map.put("name","123");
         map.put("password","123");
@@ -43,7 +46,8 @@ public class ControllerKubeclientApplication {
         String data=restTemplate.getForObject(uri,String.class);
         System.out.println(data);
 
-
+        ApiClient client = Config.defaultClient();
+        Configuration.setDefaultApiClient(client);
 
         CoreV1Api api = new CoreV1Api();
         V1PodList list = api.listPodForAllNamespaces(null, null, null, null, null, null, null, null, null);
