@@ -7,6 +7,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller-kubeclient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/controller-kubeclient/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/ControllerKubeclientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/ControllerKubeclientApplication.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,6 +16,7 @@
     <ignored path="$PROJECT_DIR$/controller-zuul/target/" />
     <ignored path="$PROJECT_DIR$/controller-test/target/" />
     <ignored path="$PROJECT_DIR$/controller-kubeclient/target/" />
+    <ignored path="$PROJECT_DIR$/controller-feignclient/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +26,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ControllerKubeclientApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/ControllerKubeclientApplication.java">
+      <file leaf-file-name="ControllerFeignclientApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller-feignclient/src/main/java/com/dg/kj/controllerfeignclient/ControllerFeignclientApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#278#279#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeignService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller-feignclient/src/main/java/com/dg/kj/controllerfeignclient/FeignService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,23 +52,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DevK8sApiService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/DevK8sApiService.java">
+      <file leaf-file-name="SocketController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controller-feignclient/src/main/java/com/dg/kj/controllerfeignclient/controller/SocketController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="225">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controller-kubeclient/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller-feignclient/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="270">
+                <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -61,6 +83,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -88,10 +111,17 @@
         <option value="$PROJECT_DIR$/controller-test/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/controller-zuul/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/controller-kubeclient/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/controller-kubeclient/pom.xml" />
         <option value="$PROJECT_DIR$/controller-kubeclient/run" />
-        <option value="$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/ControllerKubeclientApplication.java" />
         <option value="$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/DevK8sApiService.java" />
+        <option value="$PROJECT_DIR$/controller-kubeclient/pom.xml" />
+        <option value="$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/controller/GetPod.java" />
+        <option value="$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/controller/CreatePod.java" />
+        <option value="$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/ControllerKubeclientApplication.java" />
+        <option value="$PROJECT_DIR$/controller-feignclient/src/main/java/com/dg/kj/controllerfeignclient/controller/SocketController.java" />
+        <option value="$PROJECT_DIR$/controller-feignclient/src/main/java/com/dg/kj/controllerfeignclient/ControllerFeignclientApplication.java" />
+        <option value="$PROJECT_DIR$/controller-feignclient/readme.md" />
+        <option value="$PROJECT_DIR$/controller-feignclient/pom.xml" />
+        <option value="$PROJECT_DIR$/controller-feignclient/src/main/java/com/dg/kj/controllerfeignclient/FeignService.java" />
       </list>
     </option>
   </component>
@@ -178,6 +208,51 @@
             <path>
               <item name="controller" type="b2602c69:ProjectViewProjectNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="controller-feignclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="controller-feignclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="controller-feignclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="controller-feignclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="controller-feignclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controllerfeignclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="controller-feignclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controllerfeignclient" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="controller-kubeclient" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -217,6 +292,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controllerkubeclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="controller-kubeclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controllerkubeclient" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="controller" type="b2602c69:ProjectViewProjectNode" />
@@ -376,6 +461,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
@@ -476,15 +564,15 @@
       <updated>1530830378537</updated>
       <workItem from="1530830382322" duration="2000000" />
       <workItem from="1530849862596" duration="4478000" />
-      <workItem from="1530855998010" duration="7366000" />
+      <workItem from="1530855998010" duration="18873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13844000" />
+    <option name="totallyTimeSpent" value="25351000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1137" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="988" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -508,7 +596,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23541667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24583334" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -658,18 +746,6 @@
     <entry file="file://$PROJECT_DIR$/controller-test/src/main/docker/assembly.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller-test/src/main/java/com/dg/kj/controllertest/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller-eureka/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-475">
@@ -728,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller-test/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="165" column="4" selection-start-line="165" selection-start-column="4" selection-end-line="165" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller-test/src/main/java/com/dg/kj/controllertest/ControllerTestApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -759,39 +828,243 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/ControllerKubeclientApplication.java">
+    <entry file="file://$PROJECT_DIR$/controller-test/src/main/java/com/dg/kj/controllertest/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/controller/GetPod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/controller/CreatePod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1.jar!/io/kubernetes/client/apis/CoreV1Api.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4718">
+          <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+          <folding>
+            <element signature="e#2962#2963#0" expanded="true" />
+            <element signature="e#3019#3020#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java/2.0.0-beta1/client-java-2.0.0-beta1.jar!/io/kubernetes/client/util/Config.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1096">
+          <caret line="75" column="49" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1.jar!/io/kubernetes/client/ApiClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1-sources.jar!/io/kubernetes/client/apis/CoreV1Api.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/DevK8sApiService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state relative-caret-position="450">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1-sources.jar!/io/kubernetes/client/ApiClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="91" column="51" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller-test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controller-kubeclient/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+        <state relative-caret-position="357">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller-feignclient/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="270">
+            <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/ControllerKubeclientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller-feignclient/src/main/java/com/dg/kj/controllerfeignclient/ControllerFeignclientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller-feignclient/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller-feignclient/src/main/java/com/dg/kj/controllerfeignclient/FeignService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller-feignclient/src/main/java/com/dg/kj/controllerfeignclient/controller/SocketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>controller-feignclient</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
