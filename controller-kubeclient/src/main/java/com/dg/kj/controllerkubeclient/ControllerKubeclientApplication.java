@@ -7,6 +7,9 @@ import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 
+import io.kubernetes.client.apis.CoreV1Api;
+import io.kubernetes.client.models.V1Pod;
+import io.kubernetes.client.models.V1PodList;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -29,7 +32,7 @@ public class ControllerKubeclientApplication {
         client.getK8sApiServer();
     }
 
-    public String getK8sApiServer(){
+    public String getK8sApiServer() throws ApiException{
         Map<String,String> map=new HashMap<String,String>();
         map.put("name","123");
         map.put("password","123");
@@ -39,6 +42,15 @@ public class ControllerKubeclientApplication {
         RestTemplate restTemplate=new RestTemplate();
         String data=restTemplate.getForObject(uri,String.class);
         System.out.println(data);
+
+
+
+        CoreV1Api api = new CoreV1Api();
+        V1PodList list = api.listPodForAllNamespaces(null, null, null, null, null, null, null, null, null);
+        for (V1Pod item : list.getItems()) {
+            System.out.println(item.getMetadata().getName());
+        }
+
         return null;
     }
     public String createPod(){
