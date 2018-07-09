@@ -25,9 +25,9 @@ import org.springframework.web.util.UriComponentsBuilder;
 @SpringBootApplication
 @EnableDiscoveryClient
 public class ControllerKubeclientApplication {
-    private String urlApiServer = "http://localhost:8001/";
+    private String urlApiServer = "http://localhost:8080/";
     public static void main(String[] args)throws IOException, ApiException {
-        SpringApplication.run(ControllerKubeclientApplication.class, args);
+        //SpringApplication.run(ControllerKubeclientApplication.class, args);
         ControllerKubeclientApplication client = new ControllerKubeclientApplication();
         client.getK8sApiServer();
     }
