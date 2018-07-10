@@ -30,7 +30,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 @SpringBootApplication
 @EnableDiscoveryClient
 public class ControllerKubeclientApplication {
-    private String urlApiServer = "http://localhost:8080/";
+    private String urlApiServer = "http://172.17.8.101:8080/";
     public static void main(String[] args)throws IOException, ApiException {
         //SpringApplication.run(ControllerKubeclientApplication.class, args);
         ControllerKubeclientApplication client = new ControllerKubeclientApplication();
@@ -122,7 +122,7 @@ spec:
         container1.setPorts(listPort);
         podSpec.setContainers(listContainer);
         Map<String, String> nodeSel = new HashMap<>();
-        nodeSel.put("kubernetes.io/hostname", "docker-for-desktop");
+        nodeSel.put("kubernetes.io/hostname", "node1");
         podSpec.setNodeSelector(nodeSel);
         template.setSpec(podSpec);
         template.setMetadata(template_metadata);
