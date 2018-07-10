@@ -52,7 +52,7 @@ public class ControllerKubeclientApplication {
         // Solution 2: use official k8s-clint/java
         ApiClient client = Config.defaultClient();
         Configuration.setDefaultApiClient(client);
-        client.setAccessToken("/var/run/secrets/kubernetes.io/serviceaccount/token");
+        client.setApiKey("/var/run/secrets/kubernetes.io/serviceaccount/token");
         //client.setSslCaCert();
 
         CoreV1Api api = new CoreV1Api();
