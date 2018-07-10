@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import io.kubernetes.client.ApiClient;
 import io.kubernetes.client.ApiException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -60,6 +61,8 @@ public class ControllerKubeclientApplication {
         BearerToken.setApiKey(token);
         BearerToken.setApiKeyPrefix("token");
         client.setAccessToken(token);
+        client.setApiKey(token);
+        //client.setApiKeyPrefix("Token");
 
         CoreV1Api api = new CoreV1Api();
         V1PodList list = api.listPodForAllNamespaces(null, null, null, null, null, null, null, null, null);
