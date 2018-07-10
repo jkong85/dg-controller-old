@@ -16,6 +16,7 @@ import io.kubernetes.client.apis.ExtensionsV1beta1Api;
 import io.kubernetes.client.auth.ApiKeyAuth;
 import io.kubernetes.client.models.*;
 import io.kubernetes.client.util.Config;
+import io.kubernetes.client.util.KubeConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -57,7 +58,8 @@ public class ControllerKubeclientApplication {
         String token = "/var/run/secrets/kubernetes.io/serviceaccount/token";
         ApiKeyAuth BearerToken = (ApiKeyAuth) client.getAuthentication("BearerToken");
         BearerToken.setApiKey(token);
-        BearerToken.setApiKeyPrefix("Token");
+        BearerToken.setApiKeyPrefix("token");
+        client.setAccessToken(token);
 
         CoreV1Api api = new CoreV1Api();
         V1PodList list = api.listPodForAllNamespaces(null, null, null, null, null, null, null, null, null);
