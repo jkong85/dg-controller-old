@@ -13,6 +13,7 @@ import java.util.Map;
 import io.kubernetes.client.Configuration;
 import io.kubernetes.client.apis.CoreV1Api;
 import io.kubernetes.client.apis.ExtensionsV1beta1Api;
+import io.kubernetes.client.auth.ApiKeyAuth;
 import io.kubernetes.client.models.*;
 import io.kubernetes.client.util.Config;
 import org.springframework.boot.SpringApplication;
@@ -52,8 +53,10 @@ public class ControllerKubeclientApplication {
         // Solution 2: use official k8s-clint/java
         ApiClient client = Config.defaultClient();
         Configuration.setDefaultApiClient(client);
-        client.setApiKey("/var/run/secrets/kubernetes.io/serviceaccount/token");
-        //client.setSslCaCert();
+
+        String token = "/var/run/secrets/kubernetes.io/serviceaccount/token";
+        ApiKeyAuth BearerToken = (ApiKeyAuth) client.getAuthentication("BearerToken");
+        BearerToken.setApiKey(token);
 
         CoreV1Api api = new CoreV1Api();
         V1PodList list = api.listPodForAllNamespaces(null, null, null, null, null, null, null, null, null);
