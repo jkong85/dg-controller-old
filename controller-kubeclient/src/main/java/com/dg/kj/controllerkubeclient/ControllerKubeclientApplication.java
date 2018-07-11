@@ -1,11 +1,8 @@
 package com.dg.kj.controllerkubeclient;
 
-import com.alibaba.fastjson.JSON;
 import io.kubernetes.client.ApiClient;
 import io.kubernetes.client.ApiException;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URI;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -17,14 +14,12 @@ import io.kubernetes.client.apis.ExtensionsV1beta1Api;
 import io.kubernetes.client.auth.ApiKeyAuth;
 import io.kubernetes.client.models.*;
 import io.kubernetes.client.util.Config;
-import io.kubernetes.client.util.KubeConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.core.io.FileSystemResource;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
+import org.springframework.http.*;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
@@ -37,25 +32,45 @@ public class ControllerKubeclientApplication {
     public static void main(String[] args)throws IOException, ApiException {
         //SpringApplication.run(ControllerKubeclientApplication.class, args);
         ControllerKubeclientApplication client = new ControllerKubeclientApplication();
-        client.getK8sApiServer();
+//        client.getK8sApiServer();
+//        client.createDeployment();
+        client.createDeployment();
     }
 
     public String getK8sApiServer() throws IOException, ApiException{
         // Solution 1: do all things by myself
-        String strNewDeployment = "{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"name\":\"controller-kubeclient\",\"namespace\":\"default\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"controller\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"controller\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"EUREKA_SERVER_IP\",\"value\":\"10.1.0.78\"}],\"image\":\"jkong85/dg-controller-kubeclient:0.2\",\"name\":\"controller-kubeclient\",\"ports\":[{\"containerPort\":9006}]}],\"nodeSelector\":{\"kubernetes.io/hostname\":\"node1\"}}}}}";
-        URI uri = UriComponentsBuilder.fromHttpUrl(urlApiServer)
-                .queryParam("jsonString",strNewDeployment)
-                .build().encode().toUri();
-        RestTemplate restTemplate=new RestTemplate();
-        //String data=restTemplate.getForObject(uri,String.class);
-        //System.out.println(data);
-        restTemplate.postForEntity(uri, strNewDeployment, String.class);
 
+//        URI uri = UriComponentsBuilder.fromHttpUrl(urlApiServer)
+//                .queryParam("jsonString",strNewDeployment)
+//                .build().encode().toUri();
+//        RestTemplate restTemplate=new RestTemplate();
+//        String data=restTemplate.getForObject(uri,String.class);
+//        System.out.println(data);
+
+
+//        String url = "http://localhost:8080";
+//        RestTemplate restTemplate=new RestTemplate();
+//        // Add the Jackson message converter
+//        restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
+//        // create request body
+//        String input = "{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"name\":\"controller-kubeclient\",\"namespace\":\"default\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"controller\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"controller\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"EUREKA_SERVER_IP\",\"value\":\"10.1.0.78\"}],\"image\":\"jkong85/dg-controller-kubeclient:0.2\",\"name\":\"controller-kubeclient\",\"ports\":[{\"containerPort\":9006}]}],\"nodeSelector\":{\"kubernetes.io/hostname\":\"node1\"}}}}}";
+//
+//        // set headers
+//        HttpHeaders headers = new HttpHeaders();
+//        headers.setContentType(MediaType.APPLICATION_JSON);
+//        //headers.set("Authorization", "Basic " + "xxxxxxxxxxxx");
+//        HttpEntity<String> entity = new HttpEntity<String>(input, headers);
+//
+//        // send request and parse result
+//        ResponseEntity<String> response = restTemplate
+//                .postForEntity(url, entity, String.class);
+//
+//        System.out.println(response);
 
         return null;
     }
 
-    public void createDeployment() throws IOException, ApiException{
+    public void createDeploymentJavaClient() throws IOException, ApiException{
              // Solution 2: use official k8s-clint/java
         ApiClient client = Config.defaultClient();
         Configuration.setDefaultApiClient(client);
@@ -154,20 +169,18 @@ spec:
         extensionsV1beta1Api.createNamespacedDeployment("default", deploy, null);
 
     }
-    public String createPod(){
-        String url = urlApiServer;
+    public String createDeployment(){
+        System.out.println("Strat to create pod!");
+        String urlDeployment = urlApiServer + "apis/apps/v1/namespaces/default/deployments";
+        String body = "{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"name\":\"controller-kubeclient\",\"namespace\":\"default\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"controller\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"controller\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"EUREKA_SERVER_IP\",\"value\":\"10.1.0.78\"}],\"image\":\"jkong85/dg-controller-kubeclient:0.1\",\"name\":\"controller-kubeclient\",\"ports\":[{\"containerPort\":9006}]}],\"nodeSelector\":{\"kubernetes.io/hostname\":\"docker-for-desktop\"}}}}}";
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
 
-        MultiValueMap<String, Object> params = new LinkedMultiValueMap<>();
-        params.add("logo", new FileSystemResource("C:\\Users\\lixiangke\\Pictures\\Saved Pictures\\jdsadh.jpg"));
-        params.add("nickname", "nick");
-
-        HttpEntity<MultiValueMap<String, Object>> httpEntity = new HttpEntity<>(params, headers);
+        HttpEntity<String> httpEntity = new HttpEntity<>(body, headers);
         RestTemplate restTemplate = new RestTemplate();
-        String str = restTemplate.postForObject(url, httpEntity, String.class);
+        String str = restTemplate.postForObject(urlDeployment, httpEntity, String.class);
         System.out.println(str);
-
+        System.out.println("end of creating pod!");
         return null;
     }
 }
