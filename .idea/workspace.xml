@@ -401,7 +401,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38799000" />
+    <option name="totallyTimeSpent" value="39924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="-4" width="1867" height="1204" extended-state="6" />
@@ -759,11 +759,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/ControllerKubeclientApplication.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="628">
           <caret line="145" column="43" selection-start-line="145" selection-start-column="43" selection-end-line="145" selection-end-column="43" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="330">
+          <caret line="22" column="63" selection-start-line="22" selection-end-line="22" selection-end-column="63" />
+=======
+        <state relative-caret-position="-1557">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+>>>>>>> 080991a54c2e0adaa50caf3ab1e4faf94bb6c04e
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+>>>>>>> ec426ec3c05abee8ab11671a7b587d712f64adc5
         </state>
       </provider>
     </entry>
