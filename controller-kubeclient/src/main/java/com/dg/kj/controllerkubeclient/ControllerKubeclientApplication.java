@@ -28,7 +28,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 public class ControllerKubeclientApplication {
     private String urlApiServer = "http://172.17.8.101:8080/";
     public static void main(String[] args)throws IOException, ApiException {
-        //SpringApplication.run(ControllerKubeclientApplication.class, args);
+        SpringApplication.run(ControllerKubeclientApplication.class, args);
         ControllerKubeclientApplication client = new ControllerKubeclientApplication();
 
         // Test to create one deployment, it works!
