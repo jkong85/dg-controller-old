@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ebe3c5-3cb4-4617-87f1-bcd019641a6f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/ControllerKubeclientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/ControllerKubeclientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/DevK8sApiService.java" beforeDir="false" />
-    </list>
+    <list default="true" id="49ebe3c5-3cb4-4617-87f1-bcd019641a6f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/controller-eureka/target/" />
@@ -26,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/controller-feignclient/src/main/java/com/dg/kj/controllerfeignclient/ControllerFeignclientApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="608">
-              <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,11 +33,47 @@
       <file leaf-file-name="ControllerKubeclientApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/ControllerKubeclientApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="108" column="52" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
+            <state relative-caret-position="362">
+              <caret line="51" column="61" lean-forward="true" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtensionsV1beta1Api.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1-sources.jar!/io/kubernetes/client/apis/ExtensionsV1beta1Api.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="784">
+              <caret line="265" column="29" selection-start-line="265" selection-start-column="29" selection-end-line="265" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiClient.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1-sources.jar!/io/kubernetes/client/ApiClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="900" column="16" selection-start-line="900" selection-start-column="16" selection-end-line="900" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoreV1Api.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1-sources.jar!/io/kubernetes/client/apis/CoreV1Api.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="18465" column="21" selection-start-line="18465" selection-start-column="21" selection-end-line="18465" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller-kubeclient/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -70,35 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocketController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller-feignclient/src/main/java/com/dg/kj/controllerfeignclient/controller/SocketController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller-feignclient/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="969">
               <caret line="51" selection-start-line="51" selection-end-line="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller-feignclient/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="342">
-                <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -400,7 +408,7 @@
     <option name="totallyTimeSpent" value="32527000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="-4" width="1867" height="1204" extended-state="6" />
+    <frame x="1973" y="-4" width="1867" height="1204" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -415,7 +423,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23888591" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10765935" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -444,26 +452,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controller-feignclient/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="342">
-            <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/ControllerKubeclientApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller-test/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1215">
@@ -667,10 +655,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1.jar!/io/kubernetes/client/apis/CoreV1Api.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java/2.0.0-beta1/client-java-2.0.0-beta1.jar!/io/kubernetes/client/util/Config.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1.jar!/io/kubernetes/client/ApiClient.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1-sources.jar!/io/kubernetes/client/ApiClient.java" />
     <entry file="file://$PROJECT_DIR$/controller-test/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -702,14 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1-sources.jar!/io/kubernetes/client/apis/CoreV1Api.java" />
-    <entry file="file://$PROJECT_DIR$/controller-kubeclient/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -746,17 +724,63 @@
     <entry file="file://$PROJECT_DIR$/controller-feignclient/src/main/java/com/dg/kj/controllerfeignclient/ControllerFeignclientApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
-          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controller-kubeclient/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1.jar!/io/kubernetes/client/apis/CoreV1Api.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="10540" column="21" selection-start-line="10540" selection-start-column="21" selection-end-line="10540" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1-sources.jar!/io/kubernetes/client/apis/CoreV1Api.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="18465" column="21" selection-start-line="18465" selection-start-column="21" selection-end-line="18465" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1-sources.jar!/io/kubernetes/client/ApiClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="900" column="16" selection-start-line="900" selection-start-column="16" selection-end-line="900" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/kubernetes/client-java-api/2.0.0-beta1/client-java-api-2.0.0-beta1-sources.jar!/io/kubernetes/client/apis/ExtensionsV1beta1Api.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="265" column="29" selection-start-line="265" selection-start-column="29" selection-end-line="265" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.44/fastjson-1.2.44.jar!/com/alibaba/fastjson/JSON.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="402" column="25" selection-start-line="402" selection-start-column="25" selection-end-line="402" selection-end-column="25" />
+          <folding>
+            <element signature="e#15137#15138#0" expanded="true" />
+            <element signature="e#15194#15195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controller-kubeclient/src/main/java/com/dg/kj/controllerkubeclient/ControllerKubeclientApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="108" column="52" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
+        <state relative-caret-position="362">
+          <caret line="51" column="61" lean-forward="true" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
