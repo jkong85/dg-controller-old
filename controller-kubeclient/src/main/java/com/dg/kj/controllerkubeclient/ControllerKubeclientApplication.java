@@ -33,18 +33,24 @@ public class ControllerKubeclientApplication {
 
         // Test to create one deployment
         client.createDeployment();
+
+        while(true){
+            System.out.println("Job is done! Wait...");
+            try {
+                Thread.sleep(5000);
+            } catch(InterruptedException ex) {
+                Thread.currentThread().interrupt();
+            }
+        }
     }
     public void createDeploymentJavaClient() throws IOException, ApiException{
         ApiClient client = Config.defaultClient();
         Configuration.setDefaultApiClient(client);
 
         String token = "/var/run/secrets/kubernetes.io/serviceaccount/token";
-        ApiKeyAuth BearerToken = (ApiKeyAuth) client.getAuthentication("BearerToken");
+        ApiKeyAuth BearerToken = (ApiKeyAuth) client.getAuthentication("Bearer");
         BearerToken.setApiKey(token);
-        BearerToken.setApiKeyPrefix("token");
-        client.setAccessToken(token);
-        client.setApiKey(token);
-        //client.setApiKeyPrefix("Token");
+        //BearerToken.setApiKeyPrefix("token");
 
         CoreV1Api api = new CoreV1Api();
         V1PodList list = api.listPodForAllNamespaces(null, null, null, null, null, null, null, null, null);
@@ -119,7 +125,7 @@ public class ControllerKubeclientApplication {
         container1.setPorts(listPort);
         podSpec.setContainers(listContainer);
         Map<String, String> nodeSel = new HashMap<>();
-        nodeSel.put("kubernetes.io/hostname", "docker-for-desktop");
+        nodeSel.put("kubernetes.io/hostname", "node1");
         podSpec.setNodeSelector(nodeSel);
         template.setSpec(podSpec);
         template.setMetadata(template_metadata);
