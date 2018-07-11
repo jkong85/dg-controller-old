@@ -315,7 +315,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Unknown.ControllerApplication1488727893">
+  <component name="RunManager" selected="Spring Boot.ControllerApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -373,6 +373,12 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ControllerApplication" />
+      <item itemvalue="Spring Boot.ControllerKubeclientApplication" />
+      <item itemvalue="Spring Boot.ControllerTestApplication" />
+      <item itemvalue="Spring Boot.ControllerZuulApplication" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
