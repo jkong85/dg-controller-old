@@ -31,8 +31,9 @@ public class ControllerKubeclientApplication {
         //SpringApplication.run(ControllerKubeclientApplication.class, args);
         ControllerKubeclientApplication client = new ControllerKubeclientApplication();
 
-        // Test to create one deployment
-        client.createDeployment();
+        // Test to create one deployment, it works!
+        //client.createDeployment();
+        client.createDeploymentJavaClient();
 
         while(true){
             System.out.println("Job is done! Wait...");
@@ -110,7 +111,7 @@ public class ControllerKubeclientApplication {
         List<V1Container> listContainer = new ArrayList<>();
         V1Container container1= new V1Container();
         container1.setName("controller-test");
-        container1.setImage("jkong85/dg-controller-test:0.1");
+        container1.setImage("jkong85/dg-controller-test:0.2");
         List<V1EnvVar> listEnv = new ArrayList<>();
         V1EnvVar env1 = new V1EnvVar();
         env1.setName("EUREKA_SERVER_IP");
