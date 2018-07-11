@@ -20,6 +20,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.http.*;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -131,10 +132,10 @@ public class ControllerKubeclientApplication {
         extensionsV1beta1Api.createNamespacedDeployment("default", deploy, null);
 
     }
-    public String createDeployment(){
+    public String createDeployment() throws HttpClientErrorException {
         System.out.println("Strat to create pod!");
         String urlDeployment = urlApiServer + "apis/apps/v1/namespaces/default/deployments";
-        String body = "{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"name\":\"controller-kubeclient\",\"namespace\":\"default\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"controller\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"controller\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"EUREKA_SERVER_IP\",\"value\":\"10.1.0.78\"}],\"image\":\"jkong85/dg-controller-kubeclient:0.1\",\"name\":\"controller-kubeclient\",\"ports\":[{\"containerPort\":9006}]}],\"nodeSelector\":{\"kubernetes.io/hostname\":\"docker-for-desktop\"}}}}}";
+        String body = "{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"name\":\"controller-kubeclient\",\"namespace\":\"default\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"controller\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"controller\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"EUREKA_SERVER_IP\",\"value\":\"10.1.0.78\"}],\"image\":\"jkong85/dg-controller-kubeclient:0.1\",\"name\":\"controller-kubeclient\",\"ports\":[{\"containerPort\":9006}]}],\"nodeSelector\":{\"kubernetes.io/hostname\":\"node1\"}}}}}";
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
 
