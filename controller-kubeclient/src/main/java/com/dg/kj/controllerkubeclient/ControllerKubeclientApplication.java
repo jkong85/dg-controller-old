@@ -142,6 +142,8 @@ public class ControllerKubeclientApplication {
 
         HttpEntity<String> httpEntity = new HttpEntity<>(body, headers);
         RestTemplate restTemplate = new RestTemplate();
+        System.out.println("headers: " + headers.toString());
+        System.out.println("body : " + body);
         String str = restTemplate.postForObject(urlDeployment, httpEntity, String.class);
         System.out.println(str);
         System.out.println("end of creating pod!");
