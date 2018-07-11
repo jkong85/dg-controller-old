@@ -17,8 +17,11 @@ function checkIP()
 echo ">>>> clean previous running..."
 ./stop.sh
 
+HOST_NAME="node1"
+
 echo ">>>> Start the eureka server"
 cp template/eureka.yaml.template eureka.yaml
+sed -i .tmp -e "s/HOST_NAME/${HOST_NAME}/g" eureka.yaml 
 kubectl create -f eureka.yaml
 sleep 200
 
